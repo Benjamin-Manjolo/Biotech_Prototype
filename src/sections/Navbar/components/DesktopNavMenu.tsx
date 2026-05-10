@@ -24,6 +24,12 @@ const COMPANY: DropdownItem[] = [
   { label: "Contact", href: "#contact" },
 ];
 
+const PROGRAMS: DropdownItem[] = [
+  { label: "Partner Program", href: "/partners" },
+  { label: "Affiliate Program", href: "/affiliates" },
+  { label: "Developer Program", href: "/developer-program" },
+];
+
 function NavDropdown({ label, items }: { label: string; items: DropdownItem[] }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -96,6 +102,7 @@ export const DesktopNavMenu = () => (
     >
       Our Team
     </a>
+
     <a
       href="#clients"
       className="text-white/90 hover:text-sky-400 font-medium text-[15px] transition-colors"
@@ -103,6 +110,9 @@ export const DesktopNavMenu = () => (
       Clients
     </a>
     <NavDropdown label="Services" items={SERVICES} />
+
+    <NavDropdown label="Programs" items={PROGRAMS} />
+
     <NavDropdown label="Company" items={COMPANY} />
   </div>
 );
