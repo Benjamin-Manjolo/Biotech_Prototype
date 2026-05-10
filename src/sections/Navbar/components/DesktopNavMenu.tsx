@@ -89,7 +89,7 @@ function NavDropdown({ label, items }: { label: string; items: DropdownItem[] })
 
 export const DesktopNavMenu = () => (
   <div className="hidden md:flex items-center border border-white/30 rounded-full px-8 h-11 gap-8">
-    <NavDropdown label="Solutions" items={SOLUTIONS} />
+    <NavDropdown label="Programs" items={PROGRAMS} />
     <a
       href="#team"
       className="text-white/90 hover:text-sky-400 font-medium text-[15px] transition-colors"

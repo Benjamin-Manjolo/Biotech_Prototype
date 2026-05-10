@@ -5,7 +5,7 @@ export const FooterMain = () => (
   <div className="grid grid-cols-2 md:grid-cols-6 gap-8 md:gap-6 w-[83.3333%] mx-auto py-12 md:py-20">
     <FooterBrand />
     <FooterLinkColumn
-      title="Solutions"
+      title="Programs"
       links={[
         { text: "Clinical Devices", href: "#industries" },
         { text: "Medical Imaging Support", href: "#industries" },
