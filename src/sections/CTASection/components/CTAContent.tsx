@@ -5,10 +5,11 @@ export const CTAContent = () => (
 
     <div className="relative">
       <h2 className="text-white text-2xl md:text-5xl font-medium leading-tight mb-2 md:mb-3">
-        Build technology that improves patient care
+        Need reliable biomedical equipment support?
       </h2>
       <p className="text-white/80 text-sm md:text-xl leading-relaxed">
-        Request information about biomedical engineering labs, projects, and partnerships at Ranken.
+        Request a quote for equipment servicing, installation, procurement support,
+        diagnostics, or custom medical technology projects.
       </p>
     </div>
 
@@ -20,13 +21,13 @@ export const CTAContent = () => (
         href="mailto:info@rankenbiomedical.example"
         className="text-white text-sm md:text-base font-semibold whitespace-nowrap border-2 border-white rounded-full px-5 md:px-7 py-2 md:py-2.5 hover:bg-white/20 transition-colors"
       >
-        Email Admissions
+        Email Our Team
       </a>
       <a
         href="#solutions"
         className="text-white text-sm md:text-base font-semibold whitespace-nowrap border-2 border-white/40 rounded-full px-5 md:px-7 py-2 md:py-2.5 hover:bg-white/10 transition-colors"
       >
-        View Programs
+        View Solutions
       </a>
     </div>
   </div>

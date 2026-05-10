@@ -3,41 +3,41 @@ import { FAQItem } from "./FAQItem";
 const FAQS = [
   {
     number: "01.",
-    question: "What is biomedical engineering?",
+    question: "What does Ranken Bio Medical Engineering offer?",
     answer:
-      "Biomedical engineering applies engineering design, electronics, mechanics, computing, and biology to solve health and medical problems.",
+      "We provide biomedical equipment support, medical device design, diagnostics support, installation, preventive maintenance, repairs, safety checks, and healthcare technology consultation.",
     indentClass: "md:ml-24",
     defaultOpen: true,
   },
   {
     number: "02.",
-    question: "What will students learn at Ranken Bio Medical Engineering?",
+    question: "Who do you work with?",
     answer:
-      "Students explore medical instrumentation, biosensors, imaging systems, biomaterials, rehabilitation technology, safety testing, and clinical equipment workflows.",
+      "We work with hospitals, clinics, laboratories, innovation hubs, NGOs, public health teams, and organizations that need reliable biomedical technology support.",
     indentClass: "",
     defaultOpen: false,
   },
   {
     number: "03.",
-    question: "How are the images and projects connected to biomedical engineering?",
+    question: "Can you support equipment lifecycle management?",
     answer:
-      "The site highlights real biomedical contexts: laboratories, MRI systems, implant materials, and prosthetic technology to align visuals with the program focus.",
+      "Yes. We help teams plan equipment needs, document assets, install devices, run safety checks, schedule preventive maintenance, troubleshoot faults, and plan replacements.",
     indentClass: "md:ml-24",
     defaultOpen: false,
   },
   {
     number: "04.",
-    question: "What careers can this pathway support?",
+    question: "Do you build custom biomedical solutions?",
     answer:
-      "Biomedical engineering can support roles in clinical engineering, medical device design, health technology service, diagnostics, rehabilitation technology, and research labs.",
+      "Yes. Our technical team can support concept design, prototyping, sensor integration, basic automation, and testing for practical healthcare challenges.",
     indentClass: "md:ml-12",
     defaultOpen: false,
   },
   {
     number: "05.",
-    question: "Can organizations collaborate with students?",
+    question: "How can an organization request support?",
     answer:
-      "Yes. Hospitals, labs, startups, and device teams can connect with student projects around prototyping, equipment evaluation, documentation, and applied healthcare challenges.",
+      "Use the contact section to request a quote, book a consultation, or discuss a partnership for procurement, servicing, training, or custom biomedical technology work.",
     indentClass: "",
     defaultOpen: false,
   },

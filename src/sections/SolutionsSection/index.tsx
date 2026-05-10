@@ -21,7 +21,7 @@ export const SolutionsSection = () => (
               </h3>
             </div>
             <p className="text-white text-lg leading-relaxed mb-4">
-              Turn biosignals, lab results, and imaging data into actionable clinical insight.
+              Deploy dashboards and workflows that turn biosignals, lab results, and imaging data into actionable clinical insight.
             </p>
             <div className="flex-1 flex items-end relative">
               <img
@@ -42,7 +42,7 @@ export const SolutionsSection = () => (
               </h3>
             </div>
             <p className="text-white text-lg leading-relaxed mt-4">
-              Build habits for calibration, risk management, human factors, and device lifecycle documentation.
+              Keep equipment safer with calibration, risk management, human factors review, and device lifecycle documentation.
             </p>
           </div>
         </div>
@@ -63,11 +63,11 @@ export const SolutionsSection = () => (
                 LAB
               </div>
               <h3 className="text-gray-900 text-lg font-semibold whitespace-nowrap">
-                Hands-on Labs
+                Technical Service Lab
               </h3>
             </div>
             <p className="text-white text-xl font-medium leading-relaxed mt-auto mb-4">
-              Practice circuit testing, sensor integration, biomaterials evaluation, and clinical troubleshooting in one engineering workflow.
+              Access circuit testing, sensor integration, biomaterials evaluation, and clinical troubleshooting as a practical service workflow.
             </p>
           </div>
         </div>

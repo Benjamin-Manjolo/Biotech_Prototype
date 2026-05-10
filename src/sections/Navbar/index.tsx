@@ -41,19 +41,21 @@ export const Navbar = () => {
           id="mobile-navigation"
           className="md:hidden bg-black/95 backdrop-blur-sm border-t border-white/10 px-4 py-4 space-y-2"
         >
-          {["Programs", "Labs", "Research", "Resources"].map((item) => (
+          {["Solutions", "Our Team", "Clients", "Services", "Company"].map((item) => (
             <a
               key={item}
               href={
-                item === "Programs"
+                item === "Solutions"
                   ? "#solutions"
-                  : item === "Clients"
-                    ? "#clients"
-                    : item === "Research"
-                      ? "#solutions"
-                      : item === "Resources"
-                        ? "#faq"
-                        : `#${item.toLowerCase()}`
+                  : item === "Our Team"
+                    ? "#team"
+                    : item === "Clients"
+                      ? "#clients"
+                      : item === "Services"
+                        ? "#integrations"
+                        : item === "Company"
+                          ? "#contact"
+                          : `#${item.toLowerCase()}`
               }
               className="block text-white/80 hover:text-sky-400 font-medium py-2 px-3 rounded-lg hover:bg-white/5 transition-colors"
               onClick={() => setMobileOpen(false)}
@@ -72,7 +74,7 @@ export const Navbar = () => {
               href="#contact"
               className="block text-center text-black bg-white rounded-full py-2.5 font-semibold hover:bg-sky-100 transition-colors"
             >
-              Request Info
+              Request Quote
             </a>
           </div>
         </div>

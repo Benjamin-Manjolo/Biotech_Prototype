@@ -10,7 +10,7 @@ export const NavbarActions = () => (
       href="#contact"
       className="text-black font-semibold text-[15px] bg-white rounded-full px-6 h-11 flex items-center hover:bg-sky-100 transition-colors"
     >
-      Request Info
+      Request Quote
     </a>
   </div>
 );

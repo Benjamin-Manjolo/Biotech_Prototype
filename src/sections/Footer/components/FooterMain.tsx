@@ -7,36 +7,38 @@ export const FooterMain = () => (
     <FooterLinkColumn
       title="Programs"
       links={[
-        { text: "Biomedical Engineering", href: "#solutions" },
         { text: "Clinical Devices", href: "#industries" },
-        { text: "Medical Imaging", href: "#industries" },
-        { text: "Biomaterials", href: "#industries" },
-        { text: "Rehab Tech", href: "#industries" },
+        { text: "Medical Imaging Support", href: "#industries" },
+        { text: "Diagnostics & Data", href: "#solutions" },
+        { text: "Rehabilitation Devices", href: "#industries" },
+        { text: "Lab Automation", href: "#integrations" },
       ]}
     />
     <FooterLinkColumn
-      title="Labs"
+      title="Services"
       links={[
         { text: "Device Prototyping", href: "#integrations" },
         { text: "Biosignal Processing", href: "#integrations" },
         { text: "Equipment QA", href: "#solutions" },
-        { text: "Student Projects", href: "#contact" },
+        { text: "Maintenance Plans", href: "#contact" },
       ]}
     />
     <FooterLinkColumn
       title="Contact"
       links={[
-        { text: "Request Information", href: "#contact" },
-        { text: "Email Admissions", href: "mailto:info@rankenbiomedical.example" },
-        { text: "Partner With Us", href: "#partners" },
+        { text: "Request a Quote", href: "#contact" },
+        { text: "Email Our Team", href: "mailto:info@rankenbiomedical.example" },
+        { text: "Partner With Us", href: "#clients" },
       ]}
     />
     <FooterLinkColumn
-      title="Resources"
+      title="Company"
       links={[
+        { text: "Our Team", href: "#team" },
+        { text: "Clients", href: "#clients" },
         { text: "FAQ", href: "#faq" },
-        { text: "Research Focus", href: "#solutions" },
-        { text: "Career Pathways", href: "#industries" },
+        { text: "Solution Areas", href: "#solutions" },
+        { text: "Healthcare Sectors", href: "#industries" },
       ]}
     />
   </div>

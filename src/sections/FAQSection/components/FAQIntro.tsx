@@ -6,8 +6,9 @@ export const FAQIntro = () => (
       <span className="text-sky-400">Questions</span>
     </h2>
     <p className="text-zinc-300 text-base md:text-xl max-w-sm mb-10 md:mb-14 leading-relaxed">
-      Learn what biomedical engineers do, how the program connects engineering
-      to patient care, and which labs support hands-on learning.
+      Learn how our biomedical solutions team supports procurement, installation,
+      preventive maintenance, repairs, device documentation, and custom health
+      technology projects.
     </p>
 
     <div className="flex items-start gap-8 md:gap-12 mt-10 md:mt-20">
@@ -23,7 +24,7 @@ export const FAQIntro = () => (
         </a>
       </div>
       <p className="text-zinc-300 text-sm md:text-lg leading-relaxed ml-1 -mt-1 md:ml-4 md:-mt-4">
-        More questions about curriculum, labs, or careers?
+        Need a service plan, equipment quote, or technical consultation?
       </p>
     </div>
   </div>

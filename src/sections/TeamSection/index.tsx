@@ -8,12 +8,12 @@ export const TeamSection = () => (
           Our Team
         </span>
         <h2 className="mt-3 text-3xl md:text-5xl font-black tracking-tight text-gray-950">
-          Led by biomedical innovators building for real clinical needs
+          Technical leadership for biomedical solutions delivery
         </h2>
         <p className="mt-4 text-gray-500 text-base md:text-lg leading-relaxed">
-          Meet the technical leadership bringing together engineering design,
-          health technology management, and locally grounded medical device
-          innovation.
+          Meet the people leading our company&apos;s medical device innovation,
+          clinical engineering support, equipment service, and healthcare
+          technology partnerships.
         </p>
       </div>
       <TeamMemberCard />

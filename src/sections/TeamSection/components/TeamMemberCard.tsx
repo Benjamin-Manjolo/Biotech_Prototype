@@ -33,9 +33,9 @@ export const TeamMemberCard = () => (
               Ranken Chisambi
             </h3>
             <p className="mt-2 text-gray-500 text-sm md:text-base leading-relaxed max-w-2xl">
-              Biomedical engineering innovator focused on practical, low-cost
-              healthcare technology for Malawi and other resource-limited
-              settings.
+              Biomedical engineering innovator leading practical, low-cost
+              healthcare technology development and technical service strategy
+              for Malawian healthcare environments.
             </p>
           </div>
           <a
@@ -50,12 +50,12 @@ export const TeamMemberCard = () => (
         </div>
 
         <p className="text-gray-600 leading-relaxed mb-5">
-          Public reporting describes Ranken as a final-year biomedical
-          engineering student at the Malawi University of Business and Applied
-          Sciences whose work includes a portable compression therapy device,
-          the Neo Smart Baby Incubator, and a cardiac monitoring device. His
-          approach emphasizes locally available parts, maintainability, and
-          medical technologies that can be evaluated with Malawian hospitals.
+          Ranken brings hands-on biomedical innovation experience into the company&apos;s
+          solutions work, including public reporting on a portable compression
+          therapy device, the Neo Smart Baby Incubator, and a cardiac monitoring
+          device. His approach emphasizes locally available parts,
+          maintainability, and medical technologies that can be evaluated with
+          Malawian hospitals and clinical teams.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">

@@ -3,25 +3,25 @@ import { ChevronDown } from "lucide-react";
 
 type DropdownItem = { label: string; href: string };
 
-const PROGRAMS: DropdownItem[] = [
-  { label: "Biomedical Engineering", href: "#solutions" },
-  { label: "Clinical Equipment", href: "#solutions" },
-  { label: "Medical Imaging", href: "#industries" },
+const SOLUTIONS: DropdownItem[] = [
+  { label: "Medical Equipment Supply", href: "#solutions" },
+  { label: "Clinical Engineering", href: "#solutions" },
+  { label: "Medical Imaging Support", href: "#industries" },
   { label: "Rehabilitation Devices", href: "#industries" },
   { label: "Lab Automation", href: "#integrations" },
 ];
 
-const RESEARCH: DropdownItem[] = [
+const SERVICES: DropdownItem[] = [
   { label: "Device Design", href: "#solutions" },
-  { label: "Biomaterials", href: "#industries" },
-  { label: "Diagnostics", href: "#faq" },
-  { label: "Student Projects", href: "#contact" },
+  { label: "Equipment Maintenance", href: "#integrations" },
+  { label: "Diagnostics Support", href: "#faq" },
+  { label: "Partnerships", href: "#contact" },
 ];
 
-const RESOURCES: DropdownItem[] = [
-  { label: "Admissions", href: "#contact" },
-  { label: "Faculty Labs", href: "#integrations" },
-  { label: "Industry Partners", href: "#partners" },
+const COMPANY: DropdownItem[] = [
+  { label: "Our Team", href: "#team" },
+  { label: "Our Clients", href: "#clients" },
+  { label: "Contact", href: "#contact" },
 ];
 
 function NavDropdown({ label, items }: { label: string; items: DropdownItem[] }) {
@@ -91,12 +91,18 @@ export const DesktopNavMenu = () => (
   <div className="hidden md:flex items-center border border-white/30 rounded-full px-8 h-11 gap-8">
     <NavDropdown label="Programs" items={PROGRAMS} />
     <a
-      href="#industries"
+      href="#team"
       className="text-white/90 hover:text-sky-400 font-medium text-[15px] transition-colors"
     >
-      Labs
+      Our Team
     </a>
-    <NavDropdown label="Research" items={RESEARCH} />
-    <NavDropdown label="Resources" items={RESOURCES} />
+    <a
+      href="#clients"
+      className="text-white/90 hover:text-sky-400 font-medium text-[15px] transition-colors"
+    >
+      Clients
+    </a>
+    <NavDropdown label="Services" items={SERVICES} />
+    <NavDropdown label="Company" items={COMPANY} />
   </div>
 );

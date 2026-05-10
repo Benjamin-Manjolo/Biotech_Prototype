@@ -1,7 +1,8 @@
 export const FooterBottom = () => {
   const links = [
-    { href: "#solutions", label: "Programs" },
-    { href: "#integrations", label: "Labs" },
+    { href: "#solutions", label: "Solutions" },
+    { href: "#team", label: "Team" },
+    { href: "#clients", label: "Clients" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -17,13 +18,13 @@ export const FooterBottom = () => {
             href="#faq"
             className="text-gray-500 text-xs md:text-sm hover:text-gray-900 transition-colors"
           >
-            Program FAQ
+            Service FAQ
           </a>
           <a
             href="#contact"
             className="text-gray-500 text-xs md:text-sm hover:text-gray-900 transition-colors"
           >
-            Request Info
+            Request a Quote
           </a>
         </div>
 

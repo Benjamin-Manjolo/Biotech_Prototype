@@ -19,7 +19,7 @@ const INDUSTRIES: Industry[] = [
     imageSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Modern_3T_MRI.JPG",
     category: "Clinical Devices",
     title: "Clinical Devices",
-    description: "Design and maintain patient-facing equipment with attention to safety, usability, calibration, and reliability.",
+    description: "Supply, install, and maintain patient-facing equipment with attention to safety, usability, calibration, and reliability.",
     buttonText: "Explore Devices",
   },
   {
@@ -28,7 +28,7 @@ const INDUSTRIES: Industry[] = [
     imageSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/MRI_machine_with_patient_(23423505123).jpg",
     category: "Medical Imaging",
     title: "Medical Imaging",
-    description: "Connect physics, signal processing, and anatomy to understand MRI, ultrasound, X-ray, and image-guided care.",
+    description: "Support MRI, ultrasound, X-ray, and image-guided care teams with equipment planning, checks, and technical coordination.",
     buttonText: "Explore Imaging",
   },
   {
@@ -37,7 +37,7 @@ const INDUSTRIES: Industry[] = [
     imageSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Prosthesis_002.jpg",
     category: "Biomaterials",
     title: "Biomaterials",
-    description: "Study materials selected for implants, prosthetics, tissue contact, durability, and biological response.",
+    description: "Advise on materials, device concepts, prosthetics, durability, and biological-response considerations for healthcare projects.",
     buttonText: "Explore Materials",
   },
   {
@@ -46,7 +46,7 @@ const INDUSTRIES: Industry[] = [
     imageSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Verduyn_Prosthesis.jpg",
     category: "Rehab Tech",
     title: "Rehabilitation Technology",
-    description: "Create assistive tools, prosthetic concepts, and accessible systems that improve mobility and independence.",
+    description: "Develop and source assistive tools, prosthetic concepts, and accessible systems that improve mobility and independence.",
     buttonText: "Explore Rehab",
   },
 ];

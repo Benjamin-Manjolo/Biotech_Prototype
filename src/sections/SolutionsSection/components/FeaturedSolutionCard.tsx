@@ -17,8 +17,8 @@ export const FeaturedSolutionCard = () => (
 
     <div className="ml-36 md:ml-48 mt-2">
       <p className="text-white text-lg md:text-xl leading-relaxed">
-        Explore how patient monitors, imaging systems, infusion technology, and
-        safety checks move from engineering requirements into real clinical use.
+        We support patient monitors, imaging systems, infusion technology, and
+        safety checks from procurement through real clinical use.
       </p>
     </div>
   </div>
