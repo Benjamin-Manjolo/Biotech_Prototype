@@ -41,7 +41,7 @@ export const Navbar = () => {
           id="mobile-navigation"
           className="md:hidden bg-black/95 backdrop-blur-sm border-t border-white/10 px-4 py-4 space-y-2"
         >
-          {["Programs", "Team", "Clients", "Research", "Resources"].map((item) => (
+          {["Programs", "Labs", "Research", "Resources"].map((item) => (
             <a
               key={item}
               href={

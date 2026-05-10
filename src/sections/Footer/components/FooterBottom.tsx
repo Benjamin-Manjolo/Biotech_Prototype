@@ -1,8 +1,7 @@
 export const FooterBottom = () => {
   const links = [
     { href: "#solutions", label: "Programs" },
-    { href: "#team", label: "Team" },
-    { href: "#clients", label: "Clients" },
+    { href: "#integrations", label: "Labs" },
     { href: "#contact", label: "Contact" },
   ];
 

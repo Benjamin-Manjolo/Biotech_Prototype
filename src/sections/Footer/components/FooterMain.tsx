@@ -28,14 +28,12 @@ export const FooterMain = () => (
       links={[
         { text: "Request Information", href: "#contact" },
         { text: "Email Admissions", href: "mailto:info@rankenbiomedical.example" },
-        { text: "Partner With Us", href: "#clients" },
+        { text: "Partner With Us", href: "#partners" },
       ]}
     />
     <FooterLinkColumn
       title="Resources"
       links={[
-        { text: "Team", href: "#team" },
-        { text: "Clients", href: "#clients" },
         { text: "FAQ", href: "#faq" },
         { text: "Research Focus", href: "#solutions" },
         { text: "Career Pathways", href: "#industries" },

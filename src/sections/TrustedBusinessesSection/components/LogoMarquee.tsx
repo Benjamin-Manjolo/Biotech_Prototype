@@ -1,41 +1,13 @@
 import { LogoItem } from "./LogoItem";
 
-const CLIENTS = [
-  {
-    alt: "MACRA client logo",
-    name: "MACRA",
-    logoText: "MACRA",
-    colorClass: "bg-gradient-to-br from-sky-600 to-blue-800",
-    description: "Malawi Communications Regulatory Authority",
-  },
-  {
-    alt: "UNIPOD client logo",
-    name: "UNIPOD",
-    logoText: "UNI",
-    colorClass: "bg-gradient-to-br from-emerald-500 to-cyan-700",
-    description: "University innovation and physical product development hub",
-  },
-  {
-    alt: "NextGen Creatives client logo",
-    name: "NextGen Creatives",
-    logoText: "NGC",
-    colorClass: "bg-gradient-to-br from-fuchsia-500 to-violet-700",
-    description: "Creative technology and storytelling partner",
-  },
-  {
-    alt: "mHub Solutions client logo",
-    name: "mHub Solutions",
-    logoText: "mHub",
-    colorClass: "bg-gradient-to-br from-orange-500 to-red-600",
-    description: "Malawian innovation, technology, and enterprise ecosystem",
-  },
-  {
-    alt: "Ministry of Health client logo",
-    name: "Ministry of Health",
-    logoText: "MOH",
-    colorClass: "bg-gradient-to-br from-green-600 to-emerald-800",
-    description: "Public health institution supporting national healthcare priorities",
-  },
+const LOGOS = [
+  { alt: "Biomedical Device Design", label: "Device Design", h: "h-12 md:h-16" },
+  { alt: "Clinical Engineering", label: "Clinical Engineering", h: "h-12 md:h-16" },
+  { alt: "Medical Imaging", label: "Medical Imaging", h: "h-12 md:h-16" },
+  { alt: "Biomaterials", label: "Biomaterials", h: "h-12 md:h-16" },
+  { alt: "Rehabilitation Technology", label: "Rehab Tech", h: "h-12 md:h-16" },
+  { alt: "Diagnostics", label: "Diagnostics", h: "h-12 md:h-16" },
+  { alt: "Lab Automation", label: "Lab Automation", h: "h-12 md:h-16" },
 ];
 
 export const LogoMarquee = () => (
@@ -46,9 +18,9 @@ export const LogoMarquee = () => (
       WebkitMaskImage: "linear-gradient(to right, transparent, black 6%, black 94%, transparent)",
     }}
   >
-    <div className="flex animate-marquee w-max py-2">
-      {[...CLIENTS, ...CLIENTS].map((client, i) => (
-        <LogoItem key={`${client.name}-${i}`} {...client} />
+    <div className="flex animate-marquee w-max">
+      {[...LOGOS, ...LOGOS].map((logo, i) => (
+        <LogoItem key={i} alt={logo.alt} label={logo.label} heightClass={logo.h} />
       ))}
     </div>
   </div>
