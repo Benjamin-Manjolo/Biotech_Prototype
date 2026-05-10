@@ -14,48 +14,48 @@ type Industry = {
 
 const INDUSTRIES: Industry[] = [
   {
-    id: "Health & Beauty",
-    imageAlt: "Health & Beauty",
-    imageSrc: "https://c.animaapp.com/moys5pp3xEfm8f/assets/Lauryn_image-DjFvcMs3.jpg",
-    category: "Health & Beauty",
-    title: "Health & Beauty",
-    description: "Book appointments and accept payments easily.",
-    buttonText: "Explore Salons",
+    id: "Clinical Devices",
+    imageAlt: "Clinical biomedical engineering equipment",
+    imageSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Modern_3T_MRI.JPG",
+    category: "Clinical Devices",
+    title: "Clinical Devices",
+    description: "Supply, install, and maintain patient-facing equipment with attention to safety, usability, calibration, and reliability.",
+    buttonText: "Explore Devices",
   },
   {
-    id: "Food & Beverage",
-    imageAlt: "Food & Beverage",
-    imageSrc: "https://c.animaapp.com/moys5pp3xEfm8f/assets/amal_10-BsrxJged.jpg",
-    category: "Food & Beverage",
-    title: "Food & Beverage",
-    description: "Sell at your counter or get paid at the table.",
-    buttonText: "Explore Restaurants",
+    id: "Medical Imaging",
+    imageAlt: "MRI machine with patient and technician",
+    imageSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/MRI_machine_with_patient_(23423505123).jpg",
+    category: "Medical Imaging",
+    title: "Medical Imaging",
+    description: "Support MRI, ultrasound, X-ray, and image-guided care teams with equipment planning, checks, and technical coordination.",
+    buttonText: "Explore Imaging",
   },
   {
-    id: "Gaming",
-    imageAlt: "Gaming",
-    imageSrc: "https://c.animaapp.com/moys5pp3xEfm8f/assets/IMG_5272-79Bh4y_5.jpeg",
-    category: "Gaming",
-    title: "Gaming",
-    description: "Collection & disbursement for Gaming businesses.",
-    buttonText: "Explore Gaming",
+    id: "Biomaterials",
+    imageAlt: "Biomedical implant and prosthesis materials",
+    imageSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Prosthesis_002.jpg",
+    category: "Biomaterials",
+    title: "Biomaterials",
+    description: "Advise on materials, device concepts, prosthetics, durability, and biological-response considerations for healthcare projects.",
+    buttonText: "Explore Materials",
   },
   {
-    id: "Services",
-    imageAlt: "Services",
-    imageSrc: "https://c.animaapp.com/moys5pp3xEfm8f/assets/pic-CKUQhNUb.png",
-    category: "Services",
-    title: "Services",
-    description: "Invoice clients and get paid for your work.",
-    buttonText: "Explore Services",
+    id: "Rehab Tech",
+    imageAlt: "Historic prosthesis representing rehabilitation engineering",
+    imageSrc: "https://commons.wikimedia.org/wiki/Special:FilePath/Verduyn_Prosthesis.jpg",
+    category: "Rehab Tech",
+    title: "Rehabilitation Technology",
+    description: "Develop and source assistive tools, prosthetic concepts, and accessible systems that improve mobility and independence.",
+    buttonText: "Explore Rehab",
   },
 ];
 
 export const IndustrySection = () => {
-  const [activeTab, setActiveTab] = useState("Health & Beauty");
+  const [activeTab, setActiveTab] = useState("Clinical Devices");
 
   return (
-    <section className="bg-gray-50 overflow-hidden pt-4 md:pt-8 pb-16 md:pb-24">
+    <section id="industries" className="bg-gray-50 overflow-hidden pt-4 md:pt-8 pb-16 md:pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <IndustryHeader activeTab={activeTab} onTabChange={setActiveTab} />
         <div className="flex gap-3 md:gap-5 overflow-x-auto pb-4 snap-x snap-mandatory md:overflow-visible md:snap-none">

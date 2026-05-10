@@ -1,4 +1,4 @@
-const TABS = ["Health & Beauty", "Food & Beverage", "Gaming", "Services"];
+const TABS = ["Clinical Devices", "Medical Imaging", "Biomaterials", "Rehab Tech"];
 
 type Props = { active: string; onChange: (tab: string) => void };
 
@@ -7,6 +7,7 @@ export const IndustryTabs = ({ active, onChange }: Props) => (
     {TABS.map((tab) => (
       <button
         key={tab}
+        type="button"
         onClick={() => onChange(tab)}
         className={`text-[10px] md:text-[13px] font-bold whitespace-nowrap rounded-full px-3 md:px-5 py-1.5 md:py-2 transition-colors ${
           active === tab

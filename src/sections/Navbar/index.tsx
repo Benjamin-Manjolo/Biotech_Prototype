@@ -41,10 +41,22 @@ export const Navbar = () => {
           id="mobile-navigation"
           className="md:hidden bg-black/95 backdrop-blur-sm border-t border-white/10 px-4 py-4 space-y-2"
         >
-          {["Solutions", "Pricing", "Company", "Developers"].map((item) => (
+          {["Solutions", "Our Team", "Clients", "Services", "Company"].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={
+                item === "Solutions"
+                  ? "#solutions"
+                  : item === "Our Team"
+                    ? "#team"
+                    : item === "Clients"
+                      ? "#clients"
+                      : item === "Services"
+                        ? "#integrations"
+                        : item === "Company"
+                          ? "#contact"
+                          : `#${item.toLowerCase()}`
+              }
               className="block text-white/80 hover:text-sky-400 font-medium py-2 px-3 rounded-lg hover:bg-white/5 transition-colors"
               onClick={() => setMobileOpen(false)}
             >
@@ -53,16 +65,16 @@ export const Navbar = () => {
           ))}
           <div className="pt-3 border-t border-white/10 flex flex-col gap-2">
             <a
-              href="https://dashboard.paychangu.com/login"
+              href="#faq"
               className="block text-center text-white border border-white/30 rounded-full py-2.5 font-medium hover:bg-white/10 transition-colors"
             >
-              Log In
+              FAQs
             </a>
             <a
-              href="https://dashboard.paychangu.com/register"
+              href="#contact"
               className="block text-center text-black bg-white rounded-full py-2.5 font-semibold hover:bg-sky-100 transition-colors"
             >
-              Get Started
+              Request Quote
             </a>
           </div>
         </div>

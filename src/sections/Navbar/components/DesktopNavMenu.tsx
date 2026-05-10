@@ -4,26 +4,24 @@ import { ChevronDown } from "lucide-react";
 type DropdownItem = { label: string; href: string };
 
 const SOLUTIONS: DropdownItem[] = [
-  { label: "Payment Gateway", href: "/payment-gateway" },
-  { label: "Virtual & Physical Cards", href: "/virtual-cards" },
-  { label: "Bill Payments", href: "/bill-payments" },
-  { label: "Payment Link", href: "/payment-link" },
-  { label: "Event Ticketing", href: "/event-ticketing" },
-  { label: "POS", href: "/pos" },
-  { label: "Capital", href: "/paychangu-capital" },
+  { label: "Medical Equipment Supply", href: "#solutions" },
+  { label: "Clinical Engineering", href: "#solutions" },
+  { label: "Medical Imaging Support", href: "#industries" },
+  { label: "Rehabilitation Devices", href: "#industries" },
+  { label: "Lab Automation", href: "#integrations" },
+];
+
+const SERVICES: DropdownItem[] = [
+  { label: "Device Design", href: "#solutions" },
+  { label: "Equipment Maintenance", href: "#integrations" },
+  { label: "Diagnostics Support", href: "#faq" },
+  { label: "Partnerships", href: "#contact" },
 ];
 
 const COMPANY: DropdownItem[] = [
-  { label: "About Us", href: "/about" },
-  { label: "Contact", href: "/contact" },
-  { label: "Careers", href: "/careers" },
-  { label: "Brand Assets", href: "/brand" },
-];
-
-const DEVELOPERS: DropdownItem[] = [
-  { label: "API Reference", href: "/developers" },
-  { label: "SDK Documentation", href: "/developers/sdks" },
-  { label: "API Status", href: "https://status.paychangu.com" },
+  { label: "Our Team", href: "#team" },
+  { label: "Our Clients", href: "#clients" },
+  { label: "Contact", href: "#contact" },
 ];
 
 function NavDropdown({ label, items }: { label: string; items: DropdownItem[] }) {
@@ -71,7 +69,7 @@ function NavDropdown({ label, items }: { label: string; items: DropdownItem[] })
       {open && (
         <div
           id={menuId}
-          className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-2xl shadow-xl border border-gray-100"
+          className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-56 bg-white rounded-2xl shadow-xl border border-gray-100"
         >
           {items.map((item) => (
             <a
@@ -93,12 +91,18 @@ export const DesktopNavMenu = () => (
   <div className="hidden md:flex items-center border border-white/30 rounded-full px-8 h-11 gap-8">
     <NavDropdown label="Solutions" items={SOLUTIONS} />
     <a
-      href="/pricing"
+      href="#team"
       className="text-white/90 hover:text-sky-400 font-medium text-[15px] transition-colors"
     >
-      Pricing
+      Our Team
     </a>
+    <a
+      href="#clients"
+      className="text-white/90 hover:text-sky-400 font-medium text-[15px] transition-colors"
+    >
+      Clients
+    </a>
+    <NavDropdown label="Services" items={SERVICES} />
     <NavDropdown label="Company" items={COMPANY} />
-    <NavDropdown label="Developers" items={DEVELOPERS} />
   </div>
 );
