@@ -1,11 +1,12 @@
-export type LogoItemProps = { alt: string; src: string; heightClass: string };
+export type LogoItemProps = { alt: string; label: string; heightClass: string };
 
-export const LogoItem = ({ alt, src, heightClass }: LogoItemProps) => (
-  <div className="flex items-center justify-center shrink-0 px-8 md:px-12">
-    <img
-      alt={alt}
-      src={src}
-      className={`object-contain grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition-all duration-300 ${heightClass}`}
-    />
+export const LogoItem = ({ alt, label, heightClass }: LogoItemProps) => (
+  <div className="flex items-center justify-center shrink-0 px-4 md:px-6">
+    <div
+      aria-label={alt}
+      className={`flex items-center justify-center rounded-2xl border border-cyan-100 bg-white px-6 md:px-8 text-cyan-800 font-bold shadow-sm ${heightClass}`}
+    >
+      {label}
+    </div>
   </div>
 );
