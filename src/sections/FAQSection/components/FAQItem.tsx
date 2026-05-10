@@ -17,13 +17,17 @@ export const FAQItem = ({
   defaultOpen = false,
 }: FAQItemProps) => {
   const [open, setOpen] = useState(defaultOpen);
+  const answerId = `faq-answer-${number.replace(/\W+/g, "")}`;
 
   return (
     <div
       className={`bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden transition-all duration-200 ${indentClass}`}
     >
       <button
+        type="button"
         onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-controls={answer ? answerId : undefined}
         className="w-full flex items-start justify-between text-left px-4 md:px-5 py-3 md:py-4 hover:bg-gray-50 transition-colors"
       >
         <div className="flex items-start gap-2 md:gap-3 flex-1">
@@ -49,7 +53,10 @@ export const FAQItem = ({
         </div>
       </button>
       {open && answer && (
-        <div className="px-4 md:px-5 pb-5 pt-0 animate-fade-in-up">
+        <div
+          id={answerId}
+          className="px-4 md:px-5 pb-5 pt-0 animate-fade-in-up"
+        >
           <p className="text-gray-500 text-xs md:text-sm leading-relaxed ml-6 md:ml-8 border-t border-gray-50 pt-3">
             {answer}
           </p>

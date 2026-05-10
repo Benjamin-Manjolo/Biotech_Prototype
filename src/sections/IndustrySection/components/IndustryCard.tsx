@@ -64,7 +64,10 @@ export const IndustryCard = ({
       </p>
 
       {/* Button */}
-      <button className="flex items-center gap-2 bg-sky-500 text-white text-xs md:text-sm font-bold rounded-full px-4 m">
+      <button
+        type="button"
+        className="flex items-center gap-2 bg-sky-500 text-white text-xs md:text-sm font-bold rounded-full px-4 py-2 hover:bg-sky-600 transition-colors"
+      >
         {buttonText}
         <ArrowRight size={14} />
       </button>
