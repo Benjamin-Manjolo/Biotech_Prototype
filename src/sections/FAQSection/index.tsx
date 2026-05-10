@@ -3,9 +3,11 @@ import { FAQList } from "./components/FAQList";
 
 export const FAQSection = () => (
   <section
+    id="faq"
     className="bg-cover bg-center py-12 md:py-20"
     style={{
-      backgroundImage: "url('https://paychangu.com/FAQ_section.svg')",
+      backgroundImage:
+        "linear-gradient(135deg, rgba(15,23,42,0.96), rgba(8,47,73,0.92)), url('https://commons.wikimedia.org/wiki/Special:FilePath/Biomedical_Engineering_Laboratory.jpg')",
       backgroundColor: "#0f172a",
     }}
   >

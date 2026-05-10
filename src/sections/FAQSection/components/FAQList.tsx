@@ -3,41 +3,41 @@ import { FAQItem } from "./FAQItem";
 const FAQS = [
   {
     number: "01.",
-    question: "What is PayChangu?",
+    question: "What is biomedical engineering?",
     answer:
-      "PayChangu is a modern payment gateway that simplifies and secures transactions. It lets businesses accept payments via Airtel Money, TNM Mpamba, and more.",
+      "Biomedical engineering applies engineering design, electronics, mechanics, computing, and biology to solve health and medical problems.",
     indentClass: "md:ml-24",
     defaultOpen: true,
   },
   {
     number: "02.",
-    question: "What payment options are available?",
+    question: "What will students learn at Ranken Bio Medical Engineering?",
     answer:
-      "PayChangu supports Airtel Money, TNM Mpamba, Visa, and Mastercard payments. Businesses can also accept payments through payment links, POS terminals, and more.",
+      "Students explore medical instrumentation, biosensors, imaging systems, biomaterials, rehabilitation technology, safety testing, and clinical equipment workflows.",
     indentClass: "",
     defaultOpen: false,
   },
   {
     number: "03.",
-    question: "How does PayChangu handle card issuing?",
+    question: "How are the images and projects connected to biomedical engineering?",
     answer:
-      "PayChangu provides both virtual and physical cards for businesses and individuals. You can issue cards directly from your dashboard and manage spending limits.",
+      "The site highlights real biomedical contexts: laboratories, MRI systems, implant materials, and prosthetic technology to align visuals with the program focus.",
     indentClass: "md:ml-24",
     defaultOpen: false,
   },
   {
     number: "04.",
-    question: "Can I integrate PayChangu with my website?",
+    question: "What careers can this pathway support?",
     answer:
-      "Yes! PayChangu offers SDKs for JavaScript, Python, PHP, and plugins for WooCommerce, Shopify, and WordPress, making integration straightforward regardless of your platform.",
+      "Biomedical engineering can support roles in clinical engineering, medical device design, health technology service, diagnostics, rehabilitation technology, and research labs.",
     indentClass: "md:ml-12",
     defaultOpen: false,
   },
   {
     number: "05.",
-    question: "How can I manage multiple businesses with PayChangu?",
+    question: "Can organizations collaborate with students?",
     answer:
-      "Your PayChangu dashboard allows you to manage multiple business profiles from a single account, with separate analytics, payouts, and settings per business.",
+      "Yes. Hospitals, labs, startups, and device teams can connect with student projects around prototyping, equipment evaluation, documentation, and applied healthcare challenges.",
     indentClass: "",
     defaultOpen: false,
   },

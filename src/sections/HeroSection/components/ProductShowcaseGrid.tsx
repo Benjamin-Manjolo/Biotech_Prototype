@@ -1,3 +1,9 @@
+const biomedicalImages = {
+  lab: "https://commons.wikimedia.org/wiki/Special:FilePath/Biomedical_Engineering_Laboratory.jpg",
+  mri: "https://commons.wikimedia.org/wiki/Special:FilePath/MRI_machine_with_patient_(23423505123).jpg",
+  prosthesis: "https://commons.wikimedia.org/wiki/Special:FilePath/Prosthesis_002.jpg",
+};
+
 const Column1Items = () => (
   <>
     <div className="relative bg-cyan-800 rounded-2xl md:rounded-[32px] p-4 md:p-7 h-[90px] md:h-[140px] flex flex-col justify-center overflow-hidden">
@@ -5,35 +11,35 @@ const Column1Items = () => (
         NEW
       </span>
       <h3 className="text-white text-sm md:text-xl font-bold leading-snug mb-0.5">
-        Capital
+        Device Design
       </h3>
       <p className="text-white/80 text-[9px] md:text-xs font-medium">
-        Quick access to flexible loans.
+        Prototype monitors, sensors, and assistive technologies.
       </p>
     </div>
     <div className="rounded-2xl md:rounded-[40px] overflow-hidden h-40 md:h-72 shrink-0 shadow-xl">
       <img
-        src="https://c.animaapp.com/moys5pp3xEfm8f/assets/image_1-B49x3Ngi.png"
-        alt="Restaurant business"
+        src={biomedicalImages.lab}
+        alt="Biomedical engineering laboratory workspace"
         className="w-full h-full object-cover"
       />
     </div>
     <div className="bg-white rounded-2xl md:rounded-[40px] p-4 md:p-10 h-[90px] md:h-[140px] flex flex-col justify-center">
       <h3 className="text-gray-500 text-xs md:text-xl font-bold leading-snug">
-        Built to perform.
+        Built for clinics.
         <br />
-        Designed to adapt.
+        Tested in labs.
       </h3>
     </div>
-    <div className="relative bg-cyan-800 rounded-2xl md:rounded-[32px] p-4 md:p-7 h-[90px] md:h-[140px] flex flex-col justify-center overflow-hidden">
+    <div className="relative bg-emerald-700 rounded-2xl md:rounded-[32px] p-4 md:p-7 h-[90px] md:h-[140px] flex flex-col justify-center overflow-hidden">
       <span className="absolute top-2 right-2 md:top-4 md:right-4 text-[8px] md:text-[10px] font-bold uppercase tracking-widest text-white/60">
-        NEW
+        FOCUS
       </span>
       <h3 className="text-white text-sm md:text-xl font-bold leading-snug mb-0.5">
-        Capital
+        Biomaterials
       </h3>
       <p className="text-white/80 text-[9px] md:text-xs font-medium">
-        Quick access to flexible loans.
+        Study materials for implants, tissue, and safety.
       </p>
     </div>
   </>
@@ -43,34 +49,34 @@ const Column2Items = () => (
   <>
     <div className="rounded-2xl md:rounded-[40px] overflow-hidden h-40 md:h-72 shrink-0 shadow-xl">
       <img
-        src="https://c.animaapp.com/moys5pp3xEfm8f/assets/image_2-Cre0IV7o.png"
-        alt="Woman using phone"
+        src={biomedicalImages.mri}
+        alt="MRI machine with technician and patient"
         className="w-full h-full object-cover"
       />
     </div>
     <div className="relative bg-slate-900 rounded-2xl md:rounded-[32px] p-4 md:p-7 h-[90px] md:h-[140px] flex flex-col justify-center overflow-hidden">
       <span className="absolute top-2 right-2 md:top-4 md:right-4 text-[8px] md:text-[10px] font-bold uppercase tracking-widest text-white/60">
-        NEW
+        LAB
       </span>
       <h3 className="text-white text-sm md:text-xl font-bold leading-snug mb-0.5">
-        POS
+        Imaging Systems
       </h3>
       <p className="text-white/80 text-[9px] md:text-xs font-medium">
-        Modern card machines.
+        Learn the engineering behind MRI, ultrasound, and CT.
       </p>
     </div>
     <div className="relative rounded-2xl md:rounded-[40px] overflow-hidden h-40 md:h-72 shrink-0 shadow-xl">
       <img
-        src="https://c.animaapp.com/moys5pp3xEfm8f/assets/image_3-DOPFTkUu.png"
-        alt="PayChangu checkout app"
+        src={biomedicalImages.prosthesis}
+        alt="Biomedical implant and prosthesis materials"
         className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-blue-600/10" />
     </div>
     <div className="rounded-2xl md:rounded-[40px] overflow-hidden h-40 md:h-72 shrink-0 shadow-xl">
       <img
-        src="https://c.animaapp.com/moys5pp3xEfm8f/assets/image_2-Cre0IV7o.png"
-        alt="Woman using phone"
+        src={biomedicalImages.lab}
+        alt="Students working with biomedical lab equipment"
         className="w-full h-full object-cover"
       />
     </div>
