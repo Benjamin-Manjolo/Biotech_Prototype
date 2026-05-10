@@ -44,7 +44,17 @@ export const Navbar = () => {
           {["Programs", "Labs", "Research", "Resources"].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={
+                item === "Programs"
+                  ? "#solutions"
+                  : item === "Clients"
+                    ? "#clients"
+                    : item === "Research"
+                      ? "#solutions"
+                      : item === "Resources"
+                        ? "#faq"
+                        : `#${item.toLowerCase()}`
+              }
               className="block text-white/80 hover:text-sky-400 font-medium py-2 px-3 rounded-lg hover:bg-white/5 transition-colors"
               onClick={() => setMobileOpen(false)}
             >

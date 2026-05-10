@@ -4,6 +4,7 @@ import { TrustedBusinessesSection } from "@/sections/TrustedBusinessesSection";
 import { SolutionsSection } from "@/sections/SolutionsSection";
 import { IntegrationsSection } from "@/sections/IntegrationsSection";
 import { IndustrySection } from "@/sections/IndustrySection";
+import { TeamSection } from "@/sections/TeamSection";
 import { FAQSection } from "@/sections/FAQSection";
 import { CTASection } from "@/sections/CTASection";
 import { Footer } from "@/sections/Footer";
@@ -17,6 +18,7 @@ export const App = () => {
         <TrustedBusinessesSection />
         <SolutionsSection />
         <IntegrationsSection />
+        <TeamSection />
         <IndustrySection />
         <FAQSection />
         <CTASection />
