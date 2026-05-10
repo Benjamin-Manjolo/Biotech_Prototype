@@ -9,7 +9,7 @@ export const FooterBottom = () => {
 
   return (
     <div className="border-t border-gray-100 bg-white/90 backdrop-blur-sm">
-      <div className="w-[83.3333%] mx-auto py-5 md:py-6 flex flex-col md:flex-row items-center justify-between gap-4 md:gap">
+      <div className="w-[83.3333%] mx-auto py-5 md:py-6 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
         <p className="text-gray-400 text-xs md:text-sm order-3 md:order-1">
           © 2026 Thrive in the Digital Economy.
         </p>

@@ -29,21 +29,38 @@ const DEVELOPERS: DropdownItem[] = [
 function NavDropdown({ label, items }: { label: string; items: DropdownItem[] }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const menuId = `${label.toLowerCase().replace(/\s+/g, "-")}-menu`;
 
   useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      if (ref.current && !ref.current.contains(e.target as Node))
+    const handlePointerDown = (event: PointerEvent) => {
+      if (!ref.current?.contains(event.target as Node)) {
         setOpen(false);
+      }
     };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
   }, []);
 
   return (
     <div ref={ref} className="relative">
       <button
+        type="button"
         onClick={() => setOpen((v) => !v)}
         className="flex items-center gap-1 text-white/90 hover:text-sky-400 font-medium text-[15px] transition-colors"
+        aria-expanded={open}
+        aria-controls={menuId}
       >
         {label}
         <ChevronDown
@@ -52,12 +69,16 @@ function NavDropdown({ label, items }: { label: string; items: DropdownItem[] })
         />
       </button>
       {open && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-2xl shadow-xl border border-gray-100">
+        <div
+          id={menuId}
+          className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-2xl shadow-xl border border-gray-100"
+        >
           {items.map((item) => (
             <a
               key={item.label}
               href={item.href}
               className="block px-4 py-2.5 text-sm text-gray-700 hover:text-sky-500 hover:bg-sky-50 transition-colors"
+              onClick={() => setOpen(false)}
             >
               {item.label}
             </a>

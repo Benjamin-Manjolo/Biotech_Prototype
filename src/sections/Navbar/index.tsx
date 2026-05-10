@@ -10,7 +10,10 @@ export const Navbar = () => {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
+
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
+
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -34,7 +37,10 @@ export const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-black/95 backdrop-blur-sm border-t border-white/10 px-4 py-4 space-y-2">
+        <div
+          id="mobile-navigation"
+          className="md:hidden bg-black/95 backdrop-blur-sm border-t border-white/10 px-4 py-4 space-y-2"
+        >
           {["Solutions", "Pricing", "Company", "Developers"].map((item) => (
             <a
               key={item}

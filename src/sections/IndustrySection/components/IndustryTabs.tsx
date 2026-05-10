@@ -3,7 +3,7 @@ const TABS = ["Health & Beauty", "Food & Beverage", "Gaming", "Services"];
 type Props = { active: string; onChange: (tab: string) => void };
 
 export const IndustryTabs = ({ active, onChange }: Props) => (
-  <div className="flex items-center bg-gray-200/40 border border-gray-100 rounded-full p-1 md:p-1.5 overflow-x-auto gap">
+  <div className="flex items-center bg-gray-200/40 border border-gray-100 rounded-full p-1 md:p-1.5 overflow-x-auto gap-1">
     {TABS.map((tab) => (
       <button
         key={tab}
